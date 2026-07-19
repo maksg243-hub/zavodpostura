@@ -174,18 +174,7 @@ nav a:hover::after{
     margin-top:45px;
     box-shadow:0 4px 18px rgba(0,0,0,0.08);
 }
-
-
-
-
-.content-image{
-    width:100%;
-    border-radius:18px;
-    margin-top:45px;
-    box-shadow:0 4px 18px rgba(0,0,0,0.1);
-}
-
-    
+  
     
     /* IMAGE ROW */
 
@@ -228,72 +217,98 @@ footer p{
 
 /* MOBILE */
 
-@media(max-width:900px){
+/* MOBILE */
 
-    header{
-        padding:20px;
-    }
+@media(max-width:768px){
 
-    .logo-wrap{
-        flex-direction:column;
-        align-items:flex-start;
-    }
+header{
+    padding:20px;
+}
 
-    .logo{
-        width:160px;
-    }
-
-    .title-wrap h1{
-        font-size:40px;
-    }
-
-    .title-wrap span{
-        font-size:20px;
-    }
-
-    nav{
-        margin-top:20px;
-    }
-
-    nav a{
-        display:block;
-        margin-bottom:16px;
-        font-size:20px;
-    }
-
-    .container{
-        padding:60px 20px;
-    }
-
-    .container h1{
-        font-size:36px;
-    }
-
-    .container h2{
-        font-size:28px;
-    }
-
-    .container p{
-        font-size:19px;
-    }
-
-    .container li{
-        font-size:19px;
-    }
-
-    .info-box{
-        padding:28px;
-    }
-
-    .image-row{
-    flex-direction:column;
+.topbar{
     align-items:center;
 }
 
-.content-image{
-    width:100%;
-    max-width:500px;
+.logo-wrap{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
 }
+
+.logo{
+    width:80px;
+}
+
+.title-wrap{
+    text-align:center;
+}
+
+.title-wrap h1{
+    font-size:30px;
+    line-height:1.1;
+    white-space:normal;
+}
+
+.title-wrap span{
+    font-size:16px;
+    margin-top:4px;
+}
+
+nav{
+    margin-top:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    gap:10px;
+    width:100%;
+}
+
+nav a{
+    font-size:12px;
+    margin:0;
+    white-space:nowrap;
+}
+
+.container{
+    padding:50px 20px;
+}
+
+.container h1{
+    font-size:34px;
+}
+
+.container h2{
+    font-size:24px;
+}
+
+.container p{
+    font-size:18px;
+}
+
+.container li{
+    font-size:18px;
+}
+
+.info-box{
+    padding:25px;
+}
+
+/* TRI SLIKE V ENI VRSTI */
+
+.image-row{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+}
+
+.content-image{
+    width:31%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:12px;
+}
+
 }
 
 </style>

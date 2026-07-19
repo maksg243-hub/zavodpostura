@@ -172,57 +172,76 @@ footer p{
 
 /* MOBILE */
 
-@media(max-width:900px){
+/* MOBILE */
 
-    header{
-        padding:20px;
-    }
+@media(max-width:768px){
 
-    .logo-wrap{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .logo{
-        width:160px;
-    }
-
-    .title-wrap h1{
-        font-size:40px;
-    }
-
-    .title-wrap span{
-        font-size:20px;
-    }
-
-    nav{
-        margin-top:20px;
-    }
-
-    nav a{
-        display:block;
-        margin-bottom:16px;
-        font-size:20px;
-    }
-
-    .container{
-        padding:60px 20px;
-    }
-
-    .card{
-        padding:35px 25px;
-    }
-
-    .card h1{
-        font-size:36px;
-    }
-
-    .card p{
-        font-size:19px;
-    }
-
+header{
+    padding:20px;
 }
 
+.topbar{
+    align-items:center;
+}
+
+.logo-wrap{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:80px;
+}
+
+.title-wrap{
+    text-align:center;
+}
+
+.title-wrap h1{
+    font-size:30px;
+    line-height:1.1;
+    white-space:normal;
+}
+
+.title-wrap span{
+    font-size:16px;
+    margin-top:4px;
+}
+
+nav{
+    margin-top:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    gap:10px;
+    width:100%;
+}
+
+nav a{
+    font-size:12px;
+    margin:0;
+    white-space:nowrap;
+}
+
+.container{
+    padding:50px 20px;
+}
+
+.card{
+    padding:30px 20px;
+}
+
+.card h1{
+    font-size:34px;
+}
+
+.card p{
+    font-size:18px;
+}
+
+}
 </style>
 
 </head>

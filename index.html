@@ -40,7 +40,7 @@ header{
 .topbar{
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
 }
 
 /* LOGO + TITLE */
@@ -242,79 +242,110 @@ footer p{
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:768px){
 
-    header{
-        padding:20px;
-    }
+header{
+    padding:20px;
+}
 
-    .logo-wrap{
-        flex-direction:column;
-        align-items:flex-start;
-    }
+.topbar{
+    align-items:center;
+}
 
-    .logo{
-        width:160px;
-    }
+.logo-wrap{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
 
-    .title-wrap h1{
-        font-size:40px;
-    }
+.logo{
+    width:80px;
+}
 
-    .title-wrap span{
-        font-size:20px;
-    }
+.title-wrap{
+    text-align:center;
+}
 
-    nav{
-        margin-top:20px;
-    }
+.title-wrap h1{
+    font-size:30px;
+    line-height:1.1;
+    white-space:normal;
+}
 
-    nav a{
-        display:block;
-        margin-bottom:16px;
-        font-size:20px;
-    }
+.title-wrap span{
+    font-size:16px;
+    margin-top:4px;
+}
 
-    .hero{
-        padding:80px 20px;
-    }
+nav{
+    margin-top:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    gap:10px;
+    width:100%;
+}
 
-    .hero h2{
-        font-size:42px;
-    }
+nav a{
+    font-size:12px;
+    white-space:nowrap;
+    margin:0;
+}
 
-    .hero p{
-        font-size:20px;
-    }
+.hero{
+    padding:60px 20px;
+}
 
-    .section{
-        padding:60px 20px;
-    }
+.hero h2{
+    font-size:32px;
+}
 
-    .section h2{
-        font-size:34px;
-    }
+.hero p{
+    font-size:18px;
+}
 
-    .section p{
-        font-size:19px;
-    }
+.section{
+    padding:50px 20px;
+}
 
-    .contact-box{
-        padding:28px;
-    }
+.section h2{
+    font-size:30px;
+}
 
-    .contact-box h3{
-        font-size:26px;
-    }
+.section p{
+    font-size:18px;
+}
 
-    .contact-box p{
-        font-size:19px;
-    }
+.contact-box{
+    padding:25px;
+}
 
-    .quote{
-        font-size:20px;
-        padding:28px;
-    }
+.contact-box h3{
+    font-size:24px;
+}
+
+.contact-box p{
+    font-size:18px;
+}
+
+.gallery{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+}
+
+.gallery img{
+    width:31%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.quote{
+    font-size:18px;
+    padding:25px;
+}
 
 }
 

@@ -206,81 +206,98 @@ footer p{
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:768px){
 
-    header{
-        padding:20px;
-    }
-
-    .logo-wrap{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .logo{
-        width:160px;
-    }
-
-    .title-wrap h1{
-        font-size:40px;
-    }
-
-    .title-wrap span{
-        font-size:20px;
-    }
-
-    nav{
-        margin-top:20px;
-    }
-
-    nav a{
-        display:block;
-        margin-bottom:16px;
-        font-size:20px;
-    }
-
-    .container{
-        padding:60px 20px;
-    }
-
-    .container h1{
-        font-size:36px;
-    }
-
-    .container p{
-        font-size:19px;
-    }
-
-    .info-box{
-        padding:28px;
-    }
-
-    .profile-image{
-    width:100%;
-    max-width:750px;
-    border-radius:18px;
-    box-shadow:0 4px 18px rgba(0,0,0,0.1);
+header{
+    padding:20px;
 }
-    }
 
-    .back-link{
-        font-size:18px;
-    }
+.topbar{
+    align-items:center;
+}
 
-    /* ABOUT SECTION LAYOUT */
+.logo-wrap{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
 
-.about-section{
+.logo{
+    width:80px;
+}
+
+.title-wrap{
+    text-align:center;
+}
+
+.title-wrap h1{
+    font-size:30px;
+    line-height:1.1;
+    white-space:normal;
+}
+
+.title-wrap span{
+    font-size:16px;
+    margin-top:4px;
+}
+
+nav{
+    margin-top:14px;
     display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    gap:30px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    gap:10px;
+    width:100%;
 }
 
-.about-text{
-    flex:1;
-    max-width:700px;
+nav a{
+    font-size:12px;
+    margin:0;
+    white-space:nowrap;
 }
-    
+
+.container{
+    padding:50px 20px;
+}
+
+.container h1{
+    font-size:34px;
+}
+
+
+
+.profile-image{
+    width:100%;
+    height:auto;
+    max-width:100%;
+    border-radius:16px;
+    margin-bottom:12px;
+}
+
+    .about-section{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+
+    .about-text p:first-child{
+    margin-top:0;
+}
+.container p{
+    font-size:18px;
+}
+
+.info-box{
+    padding:25px;
+}
+
+.back-link{
+    font-size:18px;
+}
+
+}
     
 
 
@@ -330,55 +347,89 @@ footer p{
 
     <div class="about-section">
 
-        <div class="about-text">
+    <div class="about-image">
+        <img src="Slike/Sasa_alagic.jpg"
+             alt="Saša Alagić"
+             class="profile-image">
+    </div>
 
-            <p>
+    <div class="about-text">
+        <p>
+
                 Moje ime je Saša Alagić. Sem ustanovitelj in direktor zasebnega
+
                 zavoda Postura. Po poklicu sem magister fizioterapije in
+
                 univerzitetni diplomirani organizator.
+
             </p>
 
+
+
             <p>
+
                 Svojo poklicno pot sem začel leta 2004 v Domu starejših občanov Šiška,
+
                 nato pa jo nadaljeval v Termah Strunjan.
+
             </p>
 
+
+
             <p>
+
                 Od leta 2008 sem zaposlen na Nevrološki kliniki Univerzitetnega
+
                 kliničnega centra v Ljubljani, kjer se ukvarjam tako z rehabilitacijo
+
                 nevroloških bolnikov, kot tudi z raziskovalnim in pedagoškim delom
+
                 na področju nevrofizioterapije.
+
             </p>
+
+
 
             <div class="info-box">
 
+
+
                 <p>
+
                     V zadnjih letih sem zelo usmerjen v izobraževanje in raziskovanje
+
                     težav z držo in njenega vpliva na kvaliteto gibanja.
+
                 </p>
 
+
+
                 <p>
+
                     Več kot 20 let sem se ukvarjal z judom, kar mi danes še kako pomaga
+
                     pri razumevanju pomena pravilne drže in učinkovitih gibalnih vzorcih
+
                     pri najzahtevnejših telesnih aktivnostih.
+
                 </p>
 
+
+
                 <p>
+
                     Ker sem ponosen oče dveh športnikov, se zavedam vplivov sodobnega
+
                     sveta na gibalne navade otrok in mladine.
+
                 </p>
+
+
 
             </div>
-
-        </div>
-
-        <div class="about-image">
-            <img src="Slike/Sasa_alagic.jpg"
-                 alt="Saša Alagić"
-                 class="profile-image">
-        </div>
-
     </div>
+
+</div>
 
     <a href="index.html" class="back-link">
         ← Nazaj na domačo stran
